@@ -1,0 +1,165 @@
+---
+title: "Pengaruh Impor Daging Sapi Terhadap Tingkat Harga Daging Sapi Lokal Tahun 2017-2021"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Ni Gusti Kartika Ayumi"
+date: 2024-01-22
+number-sections: true
+format:
+  html: default
+  docx: default
+---
+
+![logo APP muncul secara random lalalala](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Dalam era globalisasi ini, perdagangan internasional menjadi salah satu aspek kunci dalam menghubungkan berbagai negara di seluruh dunia. Salah satu sektor yang menjadi fokus dalam perdagangan internasional adalah industri pangan, khususnya impor daging sapi. Daging sapi, sebagai salah satu sumber protein hewani utama, memiliki peran penting dalam memenuhi kebutuhan gizi masyarakat di berbagai belahan dunia.
+
+Pasar daging sapi merupakan salah satu sektor vital dalam perekonomian suatu negara, tidak hanya sebagai penyedia protein hewani tetapi juga sebagai sumber penghidupan bagi komunitas peternak. Dalam era globalisasi ini, perdagangan internasional daging sapi memainkan peran krusial dalam memastikan ketersediaan dan keragaman pilihan daging sapi di pasar domestik. Namun, impor daging sapi tidak hanya membawa manfaat, tetapi juga menimbulkan pertanyaan tentang pengaruhnya terhadap harga daging sapi domestik.
+
+Proses impor daging sapi dapat menciptakan dinamika kompleks dalam pasar lokal. Ketersediaan daging sapi impor yang lebih murah dapat mengubah struktur penawaran dan permintaan, mengakibatkan potensi perubahan dalam harga daging sapi lokal. Faktor-faktor seperti fluktuasi mata uang, kebijakan perdagangan internasional, dan perbedaan biaya produksi antar negara dapat menjadi penentu utama dalam membentuk tren harga daging sapi domestik. Penting untuk memahami bagaimana dinamika ini bekerja, karena dampaknya bisa melampaui sekadar perubahan harga. Dampak sosial dan ekonomi terkait dengan perubahan harga daging sapi dapat mencakup kesejahteraan peternak lokal, ketahanan pangan nasional, dan stabilitas ekonomi di sektor pertanian.
+
+### Ruang lingkup
+
+Ruang lingkup pembahasan masalah sesuai dengan variable yang akan digunakan pada analisis kali ini, yaitu mengenai Pengaruh Impor Daging Sapi Terhadap Tingkat Harga Daging Sapi Domestik Tahun 2017-2021. Batasan masalah ini berperan membantu dalam mengidentifikasi masalah yang akan dibahas dan membatasi jangkauan proses yang dibahas.
+
+### Rumusan masalah
+
+1.  Apakah perubahan volume impor daging sapi dari waktu ke waktu berpengaruh langsung pada perubahan harga daging sapi di pasar domestik?
+2.  Apakah terdapat korelasi positif atau negatif antara volume impor daging sapi dan harga daging sapi di Indonesia?
+
+### Tujuan dan manfaat penelitian
+
+Penelitian ini bertujuan untuk menentukan sejauh mana volume impor daging sapi berkorelasi dengan harga daging sapi di pasar domestik Indonesia. Manfaat penelitian ini adalah untuk memberikan pemahaman yang mendalam tentang dinamika dan interaksi antara volume impor dan harga daging sapi di pasar Indonesia.
+
+### Package
+
+Ini tidak wajib ada di tulisan anda tapi anda dapat menunjukkan Packages yang digunakan antara lain sebagai berikut:
+
+```{r}
+#| warning: false
+#| echo: true
+library("tidyverse")
+library("readxl")
+library("dplyr")
+```
+
+## Studi pustaka
+
+Perdagangan internasional atau bisnis internasional terutama dilaksanakan melalui perjanjian jual beli. Perjanjian jual beli internasional dikenal dengan sebutan perjanjian ekspor impor. Dalam jual beli semacam ini kegiatan jual disebut ekspor dan kegiatan beli disebut impor. Pihak penjual disebut eksportir dan pihak pembeli disebut importir. Secara ringkas kegiatan ini disebut ekspor impor. Kata ekspor dipandang dari sudut bahasa Indonesia adalah perbuatan mengirimkan barang ke luar Indonesia, sedangkan impor, sebaliknya, yaitu memasukkan barang dari luar negeri ke dalam Indonesia. Impor adalah kegiatan memasukkan barang ke dalam daerah pabean. Perusahaan atau perorangan yang melakukan kegiatan impor tersebut disebut importir. Daerah pabean adalah wilayah Republik Indonesia yang meliputi wilayah darat, perairan, ruang udara di atasnya, serta tempat-tempat tertentu di Zona Ekonomi Eksklusif dan landas kontinen.
+
+## Metode penelitian
+
+### Data
+
+|       |            |
+|-------|------------|
+|       |            |
+| Tahun | Y          |
+|       |            |
+| 2017  | 160.197,50 |
+|       |            |
+| 2018  | 207.427,30 |
+|       |            |
+| 2019  | 262.251,30 |
+|       |            |
+| 2020  | 223.423,70 |
+|       |            |
+| 2021  | 273.532,60 |
+|       |            |
+
+|       |             |
+|-------|-------------|
+|       |             |
+| Tahun | X           |
+|       |             |
+| 2017  | 572.028.700 |
+|       |             |
+| 2018  | 707.730.100 |
+|       |             |
+| 2019  | 829.855.300 |
+|       |             |
+| 2020  | 698.180.600 |
+|       |             |
+| 2021  | 948.374.000 |
+|       |             |
+
+|       |            |             |
+|-------|------------|-------------|
+|       |            |             |
+| Tahun | Y          | X           |
+|       |            |             |
+| 2017  | 160.197,50 | 572.028.700 |
+|       |            |             |
+| 2018  | 207.427,30 | 707.730.100 |
+|       |            |             |
+| 2019  | 262.251,30 | 829.855.300 |
+|       |            |             |
+| 2020  | 223.423,70 | 698.180.600 |
+|       |            |             |
+| 2021  | 273.532,60 | 948.374.000 |
+|       |            |             |
+
+penelitian ini menggunakan data xxx
+
+```{r}
+#| warning: false
+#| echo: true
+#import dataset
+library("tidyverse")
+library("readxl")
+VN<-read_excel("VN.xlsX")
+head(VN)
+```
+
+```{r}
+library("ggplot2")
+library("readxl")
+library("dplyr")
+ggplot(data=VN,aes(x=N,y=V)) +
+  geom_point(color="blue",size=2) + # setiap nambah command, selalu kasih tanda +
+  labs(title="tabel 1. Volume Impor Daging Sapi dan Nilai Impor Daging Sap",
+       x="Nilai Impor Daging Sapi",
+       y="Volume Impor Daging Sapi",
+       caption = "sumber: Badan Pusat Statistik") +
+  theme_classic()
+```
+
+### Metode analisis
+
+Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini merbaksud mencari hubungan antara hwy dan cty. Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah v dan $x_t$ adalah n.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Pada bagian ini dapat ditampilkan data dan visualisasi data yang telah dikumpulkan.
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+reg1<-lm(N~V,data=VN)
+summary(reg1)
+```
+
+## Kesimpulan
+
+Impor daging sapi dengan harga lebih rendah dapat memberikan tekanan pada harga daging sapi lokal. Persaingan harga ini dapat mendorong produsen daging sapi lokal untuk menyesuaikan harga mereka agar tetap kompetitif. Meskipun impor dapat menawarkan harga lebih rendah, konsumen mungkin memiliki preferensi terhadap daging sapi lokal berdasarkan kualitas, rasa, dan aspek lainnya. Ini dapat mempengaruhi permintaan dan harga daging sapi lokal. Jika impor daging sapi menjadi sumber pasokan utama, fluktuasi dalam impor dapat langsung memengaruhi tingkat harga daging sapi lokal. Ketergantungan tinggi pada impor membuat pasar lokal lebih rentan terhadap perubahan harga global.
+
+## Referensi
+
+Gupta, K., Choirinnida, I. T., & Taufik, M. (2022). Global value chain impact for Indonesia economy and the way to make it more resilient. In Indonesia Post-Pandemic Outlook: Rethinking Health and Economics Post-COVID-19. BRIN Publishing.
+
+Media, K. C. (2022, December 24). Ekspor Bauksit Distop, Pembangunan 12 Smelter Ditarget Rampung Juni 2023. KOMPAS.com. https://money.kompas.com/read/2022/12/24/110000926/ekspor-bauksit-distop-pembangunan-12-smelter-ditarget-rampung-juni-2023
+
+Sjahrir, B. S., Kis-Katos, K., & Schulze, G. G. (2014). Administrative Overspending in Indonesian Districts: The Role of Local Politics. World Development, 59, 166--183. https://doi.org/10.1016/j.worlddev.2014.01.008
+
+Referensi ini dibuat dengan Zotero. Di penelitian aslinya, anda harus masukan referensi yang anda gunakan ketika mulai menulis.
